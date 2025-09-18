@@ -2,7 +2,7 @@ import os
 import uuid
 from pytubefix import YouTube
 from moviepy.editor import AudioFileClip
-
+#批量下载视频并实现视频裁剪，转换为wav格式
 
 def download_youtube_as_wav(url, output_dir, filename=None, start_time=None, end_time=None):
     os.makedirs(output_dir, exist_ok=True)
